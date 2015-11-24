@@ -5,6 +5,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class AllSMSRecyclerAdapter extends RecyclerView.Adapter<AllSMSRecyclerAdapter.ViewHolder> {
+    private SMSDataModel mDataModel;
+
+    public AllSMSRecyclerAdapter() {
+        mDataModel = SMSDataModel.getInstance();
+    }
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return null;
